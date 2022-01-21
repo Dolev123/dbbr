@@ -1,0 +1,13 @@
+# Demo 1:
+# A simple single rule, to check if string contains:
+#	"hello" and ( ( "world" and not "goodbye" ) or "john" )
+# The parser's logic:
+# 	input.contains(word)
+
+check_string: hello
+	+ world
+		+ goodbye
+			+ :False:
+			- :True:
+		- john
+

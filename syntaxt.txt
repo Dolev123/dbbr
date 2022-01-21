@@ -1,0 +1,19 @@
+# Dolev's Boolean Based Rules (DBBR)
+# 
+# Format to store boolean trees in a simple manner.
+# 
+
+# general rule structure:
+
+<rule_name>: SENTENCE
+[<\t>	<+|-> SENTENCE ]
+
+
+SENTENCE := <boolean_logic>|<:rule_name:>
+
+# builtin rules:
+# repressents a TRUE value
+TRUE: true
+# repressents a False value
+FALSE: false
+
